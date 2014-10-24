@@ -43,7 +43,7 @@ else if quality == 3 then
 	)
 )
 
-rollout DecalQualitySwap "Preview_change" width:160 height:92
+rollout DecalQualitySwap "Decals_quality" width:160 height:92
 (
 	button updateBTN "Update" pos:[20,53] width:120 height:25
 	dropDownList ddl1 "Quality" pos:[20,3] width:120 height:40 items:#("Coarse", "Medium", "Fine") 
