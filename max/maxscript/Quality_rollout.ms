@@ -1,10 +1,10 @@
 rollout DecalQualitySwap "Preview_change" width:160 height:92
 (
 	button updateBTN "Update" pos:[20,53] width:120 height:25
-	dropDownList ddl1 "Quality" pos:[20,3] width:120 height:40 items:#("Coarse", "Medium", "Fine") selection:1
+	dropDownList ddl1 "Quality" pos:[20,3] width:120 height:40 items:#("Coarse", "Medium", "Fine") 
 	on ddl1 selected sel do
 	(
-		if DecalQualitySwap.ddl1.items[i] == "Coarse" then
+		if DecalQualitySwap.ddl1.items == "Coarse" then
 			(
 				$.LowQualityVDS = on
 				$.MediumQualityVDS = off
@@ -18,7 +18,7 @@ rollout DecalQualitySwap "Preview_change" width:160 height:92
 				$.MaxEdgeLengthPctVDS = 0
 				
 			)
-		else if DecalQualitySwap.ddl1.items[i] == "Medium" then
+		else if DecalQualitySwap.ddl1.items == "Medium" then
 			(
 				$.LowQualityVDS = off
 				$.MediumQualityVDS = on
@@ -31,7 +31,7 @@ rollout DecalQualitySwap "Preview_change" width:160 height:92
 				$.EdgeChordHeightVDS = 0
 				$.MaxEdgeLengthPctVDS = 0
 			)			
-		else if DecalQualitySwap.ddl1.items[i] == "Fine" then
+		else if DecalQualitySwap.ddl1.items == "Fine" then
 			(
 				$.LowQualityVDS = off
 				$.MediumQualityVDS = off
