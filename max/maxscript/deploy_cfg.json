@@ -1,0 +1,6 @@
+{
+	"name":"brep_quality_converter",
+	"target":"Z:/assets/scripts/max/modeling_production/brep_quality_converter/[version]/",
+	"devtarget":"Z:/assets/scripts/max/modeling_production/brep_quality_converter/dev_[version]/",
+	"excludes": []
+}
