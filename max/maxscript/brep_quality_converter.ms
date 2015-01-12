@@ -1,7 +1,7 @@
 (
 fn SetBrepQuality quality = 
 (
-	if quality == 1 then
+	if quality == 1 and $ != undefined then 
 	(
 		$.LowQualityVDS = on
 		$.MediumQualityVDS = off
@@ -15,7 +15,7 @@ fn SetBrepQuality quality =
 		$.MaxEdgeLengthPctVDS = 0
 		
 	)
-else if quality== 2 then
+else if quality== 2 and $ != undefined then
 	(
 		$.LowQualityVDS = off
 		$.MediumQualityVDS = on
@@ -28,7 +28,7 @@ else if quality== 2 then
 		$.EdgeChordHeightVDS = 0
 		$.MaxEdgeLengthPctVDS = 0
 	)			
-else if quality == 3 then
+else if quality == 3 and $ != undefined then
 	(
 		$.LowQualityVDS = off
 		$.MediumQualityVDS = off
